@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>The Olympiad Channel - India</title>
+		<link rel="icon" type="image/png" href="toc.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Lato|Quicksand' rel='stylesheet'>
+	</head>
+  <body>
+        <div id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#updates">Updates</a></li>
+            </ul>
+        </div>
+		<div class="flex-container">
+            
+            <a name="home"></a>
+			<div class="home">
+				<h1>Hi there!</h1>
+				<h2 class="mobile-display">We're The Olympiad Channel</h2>
+				<div id="display" class="display-text"></div>
+				<script type="text/javascript">
+					var string = 'The Olympiad Channel';
+					
+					var strArray = string.split("");
+					
+					    function animate(){
+					        if(strArray.length > 0){
+					            document.getElementById('display').innerHTML += strArray.shift();
+					        } else{
+					            return;
+					        }
+					        setTimeout(animate, 45);
+					    }
+					
+					    animate();
+				</script>
+				<a href="#about"><input class="button" type="button" value="Learn more"></a>
+				<img src="tocmain.jpg" class="rounded-image">
+			</div>
+            
+			<a name="about"></a>
+			<div class="about">
+				<h1> ABOUT US </h1>
+				<div class = "typed-box">
+					<span id="before-typed">We're </span><span id="typed"></span><span id="cursor">|</span>
+				</div>
+				<script src="jquery.js"></script>
+				<script src="typed.js"></script>
+				<script>
+					$(function(){
+					    $("#typed").typed({
+					      strings: ["a success", "a contributor", "a helper", "a source of updates", "the best", "'TOC India'"],
+					      typeSpeed: 0
+					    });
+					});
+				</script>
+				<h5>With the raising competition,it is very tough to think to crack an IIT or a medical exam without having good experience in olympiads and other competitive exams, 'The Olympiad Channel' as the name suggests,our aim is to inform everyone about the importance of olympiads and encouraging them in taking part into them.By just one click oon our website,you can get instant updates about all the upcoming olympiads,talent hunt exams and all other events related to it like declaration of answer keys,results or launchimg of a book etc.
+				<h3 class="quote"><em>"Live as if you were to die tomorrow, learn as if you were to live forever."</em><br>~ Mahatma Gandhi</h3>
+			</div>
+            
+			<a name="Updates"></a>
+			
+			<div class="contact">
+				<h1>CONTACT US:</h1>
+				<a href="https://bit.ly/jainilyoutube" title="Youtube" target="_blank">
+				<img src="youtubeicon.png" class="small-icon">
+				</a>
+				<a href="https://github.com/jainilajmera" title="Github" target="_blank">
+				<img src="githubicon-compressor.png" class="small-icon">
+				</a>
+				<a href="mailto:jainov11@gmail.com" title="Mail">
+				<img src="mail.png" class="small-icon">
+				</a>
+				<br>Feel free to drop a mail anytime. I would suggest staying away from other forms of communication, such as carrier pigeons and psychic signals, as they seem to be less reliable.
+			</div>
+			<div class="footer">© Jainil Ajmera, 2016</div>
+		</div>
+	</body>
+</html>
